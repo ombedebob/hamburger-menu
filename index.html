@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>XOXO</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-links" id="links">
+      <ul >
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+        <li>PROJECTS</li>
+    </ul>
+    </div>
+    
+    <div class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
+  <script>
+    const nav = document.querySelector('#links');
+    const menu = document.querySelector('.menu');
+    
+    menu.addEventListener('click',() => {
+      nav.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>
